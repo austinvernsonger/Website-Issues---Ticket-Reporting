@@ -1,0 +1,129 @@
+\documentclass[10pt, oneside, letterpaper]{apa6e}
+\usepackage{apacite} % This is not done automatically!
+\usepackage{etoolbox}
+\apptocmd{\thebibliography}{\raggedright}{}{}
+% #### THE FOLLOWING SECTION:
+%		Edit the following section as necessary
+\makeatletter
+\def\authornote#1{} % Comment out to use author note
+\def\abstract#1{}	% Comment out to use abstract
+\renewcommand{\maketitle}{%
+\thispagestyle{titlepage}%
+\vspace*{2in}%
+\Centering\@title\\\@author%
+\vfill%
+\ifdefined%
+	\apaSIXe@leavefloats{\large\textbf{\textit{A helpful reminder, 
+		courtesy \texttt{apa6e.cls}:} Figures and tables are 
+		currently mixed in with your text for easier reading. 
+		Don't forget to remove the \texttt{leavefloats} 
+		option before you submit!}\vfill}%
+	\fi
+%Author Note\par\RaggedRight\@authornote%		This section does the abstract 
+%\mspart{Abstract}%						and author note. Simply 
+%\@abstract%								uncomment to use. :)
+\newpage%
+%\tableofcontents%				Uncomment these two lines  
+%\newpage%						to use toc.
+\Centering\@title\\%
+\RaggedRight%
+}
+\makeatother
+% #### END GROSSECTION
+
+\title{Website Issues - Ticket Reporting}
+\shorttitle{Website Issues - Ticket Reporting}
+\author{
+		%COURSE CODE	\\% 		If for school
+Austin Vern Songer\\%		NAME
+\\%		DATE, if for school
+\\%		ORGANIZATION
+		}
+
+\begin{document}
+
+\maketitle
+
+\section{Website Issues: State}
+
+\begin{itemize}
+    \item \textbf{Backlog}
+    \item \textbf{In-Progress}
+    \item \textbf{Resolved} - Bug is solved, feature implemented, to do is done, etc 
+    \item \textbf{Reopened}
+    \item \textbf{Closed}
+    \item \textbf{Duplicate} - duplicate of another task 
+    \item \textbf{Deferred} - We just cannot deal with this bug right now and have to retarget it for the future 
+    \item \textbf{Invalid} -  not an actual bug, not a wanted feature, out of scope, etc 
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Website Issues: Priority}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+    \item \textbf{Blocker} (\textit{P1}) - Reserved for catastrophic failures -  crashes, corrupt data, etc. that (a) prevent somebody from completing their task, and (b) have no workaround. These should be extremely rare. They must be fixed immediately (same-day)
+    \item  \textbf{Critical} (\textit{P2}) - These may refer to unhandled exceptions or to other "serious" bugs that only happen under certain specific conditions (i.e. a practical workaround is available). No hard limit for resolution time, but should be fixed within the week. They key distinction between (1) and (2) is not the severity or impact but the existence of a workaround
+    \item \textbf{Major} (\textit{P3}) - Usually reserved for performance issues. Anything that seriously hampers user experience
+    \item \textbf{Minor} (\textit{P4}) - These are "nuisance" bugs. A default setting not being applied, a race condition in the UI, etc
+    \item \textbf{Trivial} (\textit{P5})  -  Cosmetic issues. Scroll bars appearing where they shouldn't, window doesn't remember saved size/location, typos, last character of a label being cut off, that sort of thing. They'll get fixed if the fix only takes a few minutes and somebody's working in the content folder
+    \item \textbf{Incomplete} (\textit{P6})  -  Need more information from author or other to proceed. These tasks will also expire within a week 
+    \item \textbf{Needs Triage} (\textit{P7}) - Issue/Task just submitted and needs evaluation
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Website Issues: Issue Type}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+    \item \textbf{Bug}
+    \item \textbf{Improvement}
+    \item \textbf{Idea}
+    \item \textbf{Wishlist}
+    \item \textbf{Design} - design for how some feature, functionality or implementation should work 
+    \item \textbf{To Do} -  tasks that needs to be done 
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Labels/Tags}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+    \item \textbf{Frontend}
+    \item \textbf{Backend}
+    \item \textbf{Navigation Structure}
+    \item \textbf{Layout}
+    \item \textbf{Design}
+    \item \textbf{Images}
+    \item \textbf{Content}
+    \item \textbf{Formatting}
+    \item \textbf{Shopping Cart}
+    \item \textbf{Site Search}
+    \item \textbf{Permissions}
+    \item \textbf{Link}
+    \item \textbf{Data}
+    \item \textbf{Functionality}
+    \item \textbf{Header}
+    \item \textbf{Footer}
+    \item \textbf{Sidebar}
+    \item \textbf{MegaMenu}
+    \item \textbf{Advertisement}
+    \item \textbf{Logo}
+    \item \textbf{Button}
+    \item \textbf{Background}
+    \item \textbf{Article}
+    \item \textbf{Database}
+    \item \textbf{Audio}
+    \item \textbf{Video}
+    \item \textbf{Calendar}
+    \item \textbf{Mailing List}
+\end{itemize}
+
+
+
+
+
+\end{document}
